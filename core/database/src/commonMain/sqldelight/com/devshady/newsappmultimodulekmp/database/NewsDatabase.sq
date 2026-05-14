@@ -1,0 +1,19 @@
+CREATE TABLE Article (
+    url TEXT NOT NULL PRIMARY KEY,
+    title TEXT NOT NULL,
+    description TEXT,
+    urlToImage TEXT,
+    publishedAt TEXT NOT NULL,
+    sourceName TEXT,
+    content TEXT
+);
+
+insertArticle:
+INSERT OR REPLACE INTO Article(url, title, description, urlToImage, publishedAt, sourceName, content)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+getAllArticles:
+SELECT * FROM Article;
+
+deleteAllArticles:
+DELETE FROM Article;
