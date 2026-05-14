@@ -12,6 +12,7 @@ import kotlinx.coroutines.launch
 
 /**
  * A helper class for iOS to observe news feed state and trigger refreshes.
+ * This class is enhanced by SKIE to provide Swift-friendly Flow support.
  */
 class FeedStateHolder(private val repository: NewsRepository) {
     private val scope = CoroutineScope(Dispatchers.Main + SupervisorJob())
