@@ -1,0 +1,17 @@
+# Block user-specific local scheme overrides
+**/iosApp/*.xcodeproj/xcuserdata/
+
+# Explicitly ensure the shared scheme remains tracked
+!**/iosApp/*.xcodeproj/xcshareddata/xcschemes/*.xcscheme
+**/iosApp/*.xcworkspace/xcuserdata/
+**/iosApp/xcschemesmanagement.plist
+# Xcode user specific files
+**/iosApp/*.xcuserdatad/
+**/iosApp/**/xcuserdata/
+**/iosApp/DerivedData/
+
+# CocoaPods / SPI builds (if applicable)
+**/iosApp/.Pods/
+**/iosApp/Pods/
+**/iosApp/.kotlin/
+**/iosApp/.kotlin/**
