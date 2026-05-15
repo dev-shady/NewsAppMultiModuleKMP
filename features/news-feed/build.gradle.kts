@@ -22,7 +22,7 @@ kotlin {
         iosSimulatorArm64()
     ).forEach {
         it.binaries.framework {
-            baseName = "features-news-feed"
+            baseName = "SharedNewsKit"
             isStatic = true
             xcf.add(this)
         }
