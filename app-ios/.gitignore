@@ -15,3 +15,8 @@
 **/iosApp/Pods/
 **/iosApp/.kotlin/
 **/iosApp/.kotlin/**
+
+# Ignore local workspace layouts and states
+**/*.xcworkspace/
+**/*.workspace/
+**/project.xcworkspace/
