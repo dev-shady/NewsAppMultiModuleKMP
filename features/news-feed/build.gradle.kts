@@ -24,6 +24,8 @@ kotlin {
         it.binaries.framework {
             baseName = "SharedNewsKit"
             isStatic = true
+            // ◄ ADD THIS LINE: Explicitly packages the native Apple SQLite link instruction
+            linkerOpts("-lsqlite3")
             xcf.add(this)
         }
     }
