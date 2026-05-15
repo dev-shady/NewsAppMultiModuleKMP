@@ -108,6 +108,7 @@ sqldelight-coroutines-extensions = { group = "app.cash.sqldelight", name = "coro
 koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
 koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
 koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -119,3 +120,5 @@ jetbrains-kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.seri
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 sqldelight = { id = "app.cash.sqldelight", version.ref = "sqlDelight" }
 skie = { id = "co.touchlab.skie", version.ref = "skie" }
+buildkonfig = { id = "com.codingfeline.buildkonfig", version = "0.15.2" }
+

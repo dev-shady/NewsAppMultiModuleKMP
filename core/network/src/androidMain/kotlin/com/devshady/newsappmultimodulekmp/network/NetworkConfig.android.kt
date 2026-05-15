@@ -1,7 +1,7 @@
 package com.devshady.newsappmultimodulekmp.network
 
-import com.devshady.newsappmultimodulekmp.core.network.BuildConfig
+import com.devshady.newsappmultimodulekmp.BuildKonfig
 
 actual object NetworkConfig {
-    actual val apiKey: String = BuildConfig.NEWS_API_KEY
+    actual val apiKey: String = BuildKonfig.NEWS_API_KEY
 }
