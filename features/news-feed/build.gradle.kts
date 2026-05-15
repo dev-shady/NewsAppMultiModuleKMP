@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.plugin.mpp.apple.XCFramework
+
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
     alias(libs.plugins.androidLibrary)
@@ -11,7 +13,9 @@ kotlin {
             jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11)
         }
     }
-    
+
+    val xcf = XCFramework("SharedNewsKit")
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -20,6 +24,7 @@ kotlin {
         it.binaries.framework {
             baseName = "features-news-feed"
             isStatic = true
+            xcf.add(this)
         }
     }
 
